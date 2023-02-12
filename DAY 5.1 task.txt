@@ -1,0 +1,79 @@
+1).Do the below programs in anonymous function & IIFE
+   Print odd numbers in an array
+
+const oddNumbers = function(arr) {
+  const result = arr.filter(function(num) {
+    return num % 2 !== 0;
+  });
+  console.log(result);
+};
+oddNumbers([1, 2, 3, 43, 5, 64, 7, 78, 9]);
+
+
+(function(arr) {
+  const result = arr.filter(function(num) {
+    return num % 2 !== 0;
+  });
+  console.log(result);
+})([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+
+ //  Convert all the strings to title caps in a string array
+
+const titleCaps = function(strArr) {
+  const result = strArr.map(function(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  });
+  console.log(result);
+};
+titleCaps([ "welcome", "all","of", "you",]);
+   // Sum of all numbers in an array
+
+const sum = function(arr) {
+    const result = arr.reduce(function(m, p)
+     {
+      return m + p;
+    }, 0);
+    console.log(result);
+  };
+  sum([9,7,5,6,2,5]);
+   Return all the prime numbers in an array
+   Return all the palindromes in an array
+   Return median of two sorted arrays of the same size.
+   Remove duplicates from an array
+   Rotate an array by k times 
+
+2).(Submission not needed) https://medium.com/@reach2arunprakash/guvi-zen-class-javascript-warm-up-programming-problems-15973c74b87f 
+
+3).Do the below programs in arrow functions.
+   Print odd numbers in an array
+(function(arr) {
+  const result = arr.filter(function(num) {
+    return num % 2 !== 0;
+  });
+  console.log(result);
+})([1, 22, 53, 34, 5, 6, 87, 88, 9]);
+
+   Convert all the strings to title caps in a string array
+(function(strArr) {
+  const result = strArr.map(function(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  });
+  console.log(result);
+})
+
+([ "welcome", "all","of", "you",]);
+
+   // Sum of all numbers in an array
+(function(arr) {
+  const result = arr.reduce(function(m, p) {
+    return m + p;
+  }, 0);
+  console.log(result);
+})
+([1, 22, 53, 34, 5, 6, 87, 88, 9]);
+   Return all the prime numbers in an array
+
+const findPrimeOrNot = () => {
+console.log("Hey");
+};
+findPrimeOrNot()
